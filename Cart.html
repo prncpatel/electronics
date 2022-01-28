@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css" integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="Cart.css">
+</head>
+<body>
+    <!-- SECTION1 CONTENTS -->
+    <section class="section1">
+    <div class="card border-0" id="card">
+        <header class="header card-header py-1">
+            <div id="row" class="row">
+               <div id="col1" class="col-3">
+                  <img src="all_images/electronic-device.png" height="75">
+                  <div>
+                  <h3>Digital Shopiee</h3>
+                  </div>
+               </div>
+               
+               <div class="col-3 d-flex justify-content-around" id="col3">
+                <div class="d-flex">
+                    <i class="fas fa-bars fa-2x" data-toggle="collapse" data-target="#abc"></i>
+                    <h5 class="pt-1">&nbsp;Menu</h5>
+                </div>
+                <div class="d-flex">
+                    <i class="fas fa-user-circle fa-2x" id="user"></i>
+                    <h5 class="pt-1">&nbsp;MyAcc</h5>
+                </div>
+                <div class="d-flex">
+                    <i class="fas fa-shopping-cart fa-2x" id="cart"></i>
+                    <h5 class="pt-1">&nbsp;Cart</h5>
+                </div>
+           </div>
+               <div id="col2" class="col-md-6">
+                   <div class="input-group">
+                       <select class="input-group-prepend form-control">
+                         <option>Mobile</option>
+                         <option>Laptop</option>
+                         <option>TV</option>
+                         <option>Camera</option>
+                       </select>
+                       <input type="text" class="form-control w-50" placeholder="Search for Products">
+                       <button class="btn btn-secondary input-group-append"><i class="fas fa-search fa-lg" style="margin-top: 11px;"></i></button>
+                    </div>
+               </div>
+            </div>
+        </header>
+        <!-- MENU -->
+        <nav class="menu collapse" id="abc">
+          <div id="row" class="row py-2">
+              <div class="col-md-2"><h5>Home</h5></div>
+              <div class="col-md-2"><h5>Order</h5></div>
+              <div class="col-md-2"><h5>Product</h5></div>
+              <div class="col-md-2"><h5>Services</h5></div>
+              <div class="col-md-2"><h5>Contact</h5></div>
+              <div class="col-md-2"><h5>Shippment</h5></div>
+          </div>
+        </nav>
+        <!-- EOF MENU -->
+        <div class="card-body" id="cardbody">
+            <div class="row mb-2" id="row1">
+                <div class="col-lg-2">
+                    <h3>Your Cart</h3>
+                </div>
+                <div class="col-lg-10" id="col1">
+                    <ul>
+                        <li id="list1"><h5 class="my-0" style="font-size: 19px;"><a href="home.html" style="text-decoration: none; color: black;">Home</a></h5></li>/
+                        <li><h5 class="my-0" style="font-size: 19px; color:blue;">Cart</h5></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="row2">
+                <div class="col-1">
+
+                </div>
+                <div class="col-11">
+                    <h4>Products</h4>
+                </div>
+            </div>
+            <hr style="margin: 0% auto; width: 90%;">
+            <div class="row mt-3" id="row3">
+                <div class="col-1" id="col1"></div>
+                <div class="col-7 border rounded mb-3" id="col2">
+                    <div class="row">
+                        <div class="col-12">
+                           <button type="button" class="close" id="btn">&times;</button>
+                           <script>
+                             $(document).ready(function(){
+                              $("#btn").click(function(){
+                                $(this).remove();
+                                $("#row31").remove();
+                              });
+                             });
+                           </script>
+                        </div>
+                    </div>
+                    <!-- ROW31 -->
+                   <div class="row border-bottom" id="row31" >
+                       <div class="col-sm-3" id="col1">
+                           <img src="all_images/Laptops/dell Vostro 3405/51CEknIIHcL._SL1080_.jpg" width="160px" height="160px">
+                       </div>
+                       <div class="col-lg-7" id="col2">
+                          <h5>Dell Vostro 3405</h5>
+                          <h5><img src="all_images/rupee.png" width="16px">32,750</h5>
+                          <div class="form-group">
+                              <label style="font-weight: 500;">Quantity</label>
+                              <input type="number" class="w-25 pl-2" value="1" id="input1">
+                              <button id="remove" type="button" class="close" style=" color: red;">&times; <span style="font-size: 18px;">remove</span></button>
+                              <script>
+                                $(document).ready(function(){
+                                    $("#remove").click(function(){
+                                    $('#input1').val('');
+                                  });
+                                });
+                              </script>
+                          </div>
+                       </div>
+                       <div class="col-2">
+                       </div>
+                   </div>
+                   <!-- EOF ROW31 -->
+                   <div class="row">
+                    <div class="col-12">
+                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                </div>
+                   <!-- ROW32 -->
+                   <div class="row border-lg border-top-0" id="row31">
+                    <div class="col-sm-3" id="col1">
+                        <img src="all_images/Laptops/dell Vostro 3405/51CEknIIHcL._SL1080_.jpg" width="160px" height="160px">
+                    </div>
+                    <div class="col-lg-7" id="col2">
+                       <h5>Dell Vostro 3405</h5>
+                       <h5><img src="all_images/rupee.png" width="16px">32,750</h5>
+                       <div class="form-group">
+                           <label style="font-weight: 500;">Quantity</label>
+                           <input type="number" class="w-25 pl-2" value="1">
+                           <button id="remove" type="button" class="close" data-dismiss="modal" style="color: red;">&times; <span style="font-size: 18px;">remove</span></button>
+                       </div>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                </div>
+                   <!-- EOF ROW32 -->
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" id="Subtotal">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6 style="text-align: center;">Subtotal</h6>
+                                    <h3 style="text-align: center; color: darkslategray;"><img src="all_images/rupee.png" width="16px">32,750</h3>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header bg-white">
+                                    <i class="fas fa-angle-down float-right" data-toggle="collapse" data-target="#promo"></i>
+                                    <h6 class="my-0">Apply promo code</h6>
+                                </div>
+                                <div class="card-body collapse" id="promo">
+                                   <input type="text" class="form-control mb-3" placeholder="Promo code">
+                                   <button class="btn btn-block btn-outline-secondary" >Apply promo code</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                            <div class="card-header bg-white">
+                                <i class="fas fa-angle-down float-right" data-toggle="collapse" data-target="#shipping"></i>
+                                <h6 class="my-0">Shipping estimates</h6>
+                            </div>
+                            <div class="card-body collapse" id="shipping">
+                               <input type="text" class="form-control mb-3" placeholder=" State">
+                               <input type="text" class="form-control mb-3" placeholder=" City">
+                               <input type="text" class="form-control mb-3" placeholder="Zipcode">
+                               <button class="btn btn-block btn-outline-secondary" >Calculate Shipping</button>
+                               </div>
+                        </div>
+                        <button class="btn btn-block btn-outline-dark mt-3" >Checkout</button>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+        </div>
+        <div class="row">
+          <div class="col-1">
+
+          </div>
+          <div class="col-md-7 mt-2">
+              <div class="row">
+                  <div class="col-sm-6 mt-1">
+                     <button class="btn btn-block btn-outline-secondary py-2"><a style="color: black; text-decoration: none;" href="home.html"><i class="fas fa-angle-left"></i> Back to Shopping</a></button>
+                  </div>
+                  <div class="col-sm-6 mt-1">
+                      <button class="btn btn-block btn-dark py-2"><a href="Pdetails.html" style="color: white; text-decoration: none;">Proceed to details <i class="fas fa-angle-right"></i></a></button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </section>
+    <!-- EOF SECTION1 -->
+
+    <!-- SECTION2 -->
+    <section class="section5 my-4">
+        <div class="row m-0 p-0" id="row2">
+          <div class="col-6 p-0">
+            <div class="row main-column m-0">
+              <div class="col-sm-6 py-2 column" id="col1">
+                <div>
+                  <i class="fas fa-rocket text-danger"></i>
+                </div>
+                <div> 
+                  <h5 class="my-0">FAST & FREE DELIVERY</h5>
+                  <p style="line-height: 18px;">Free delivery for all orders over 5000
+                  </p>
+                </div> 
+              </div>
+              <div class="col-sm-6 py-2 column" id="col2">
+                <div>
+                  <i class="fas fa-sync-alt text-success"></i>
+                </div>
+                <div> 
+                  <h5 class="my-0">MONEY BACK GAURENTEE</h5>
+                  <p style="line-height: 18px;">We return money within 30 days</p>
+                </div>  
+              </div>
+          </div>
+          </div>
+          <div class="col-6 p-0">
+            <div class="row main-column m-0">
+              <div class="col-sm-6 py-2 column" id="col3">
+                <div>
+                  <i class="fas fa-headset text-info"></i>
+                </div>
+                <div>  
+                  <h5 class="my-0">24/7 CUSTOMER SUPPORT</h5>
+                  <p style="line-height: 18px;">Friendly 24/7 customer support</p>
+                </div>   
+              </div>
+              <div class="col-sm-6 column py-2" id="col4">
+                <div>
+                  <i class="fas fa-credit-card text-secondary"></i>
+                </div>
+                <div>  
+                  <h5 class="my-0">SECURE ONLINE PAYMENT</h5>
+                  <p style="line-height: 18px;">We possess Secure certificate</p>
+                </div>   
+              </div>
+            </div>
+          </div>    
+        </div>
+      </section>
+      <!-- EOF SECTION2 -->
+
+      <!-- FOOTER -->
+    <footer class="footer bg-dark pt-3">
+        <div class="row m-0">
+          <div class="col-sm-6">
+            <div class="row m-0 p-0">
+              <div class="col-6 p-0">
+                 <h5 class="text-white">Shop departments</h5>
+                 <ul>
+                   <li>Mobile</li>
+                   <li>Laptop</li>
+                   <li>TV</li>
+                   <li>Headphone</li>
+                   <li>AC</li>
+                   <li>Camera</li>
+                 </ul>
+              </div>
+              <div class="col-6 p-0">
+                 <h5 class="text-white">About us</h5>
+                 <ul>
+                   <li>About company</li>
+                   <li>Our team</li>
+                   <li>News</li>
+                 </ul> 
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row m-0 p-0">
+              <div class="col-6 p-0">
+                <h5 class="text-white">Contact us</h5>
+                <ul>
+                  <li><i class="fas fa-phone"></i> +91 8539743983</li>
+                  <li><i class="fas fa-phone"></i> +91 4867984575</li>
+                  <li><i class="fas fa-envelope"></i> digitalshopiee@gmail.com</li>
+                </ul>
+  
+              </div>
+              <div class="col-6 p-0">
+                <h5 class="text-white">Stay informed</h5>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Your Email">
+                  <div class="input-group-append border-0">
+                    <span class="input-group-text bg-danger text-white border-0">Subscribe</span>
+                  </div>
+                </div>
+                <i class="fab fa-twitter fa-2x" style="color: #00acee; float: right;"></i>
+                <i class="fab fa-youtube fa-2x mr-1" style="color: #f73434; float: right;"></i>
+                <i class="fab fa-facebook fa-2x mr-1" style="color: #4b7df0; float: right;"></i>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="background-color: rgb(124, 123, 123);width: 90%; margin: 0% auto;">
+        <div class="row m-0 bg-dark">
+          <div class="col-4"></div>
+          <div class="col-md-4 my-2 d-flex justify-content-center text-white">
+            <i class="far fa-copyright"></i><p><b> digitalshopiee.2021</b></p>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </footer>
+      <!-- EOF FOOTER -->
+    
+</body>
+</html>

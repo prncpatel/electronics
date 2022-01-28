@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css" integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/Website/style.css">
+</head>
+<body>
+    <!-- SECTION1 CONTENT -->
+    <section class="section1">
+        <div class="card border-0" id="card">
+        <header class="header card-header">
+            <div id="row" class="row">
+               <div id="col1" class="col-3">
+                  <img src="all_images/electronic-device.png" height="75">
+                  <div>
+                  <h3>Digital Shopiee</h3>
+                  </div>
+               </div>
+               
+               <div class="col-3 d-flex justify-content-around" id="col3">
+                <div class="d-flex">
+                    <i class="fas fa-bars fa-2x" data-toggle="collapse" data-target="#abc"></i>
+                    <h5 class="pt-1">&nbsp;Menu</h5>
+                </div>
+                <div class="d-flex">
+                    <i class="fas fa-user-circle fa-2x" id="user"></i>
+                    <h5 class="pt-1">&nbsp;MyAcc</h5>
+                </div>
+                <div class="d-flex">
+                  <a href="Cart.html" style="text-decoration: none; color: black;">
+                    <!-- <i class="fas fa-shopping-cart fa-2x" id="cart"></i> -->
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_ex6xbay5.json"  background="transparent"  speed="1"  style="width: 45px; height: 50px;"  loop  autoplay></lottie-player>
+                  </a>  
+                    <h5 style="padding-top: 11px;">&nbsp;<a href="Cart.html" style="text-decoration: none; color: #000;">Cart</a></h5>
+                </div>
+           </div>
+               <div id="col2" class="col-md-6">
+                   <div class="input-group">
+                       <select class="input-group-prepend form-control">
+                         <option>Mobile</option>
+                         <option>Laptop</option>
+                         <option>TV</option>
+                         <option>Camera</option>
+                       </select>
+                       <input type="text" class="form-control w-50" placeholder="Search for Products">
+                       <button class="btn btn-secondary input-group-append"><i class="fas fa-search fa-lg" style="margin-top: 11px;"></i></button>
+                    </div>
+               </div>
+            </div>
+        </header>
+        <!-- MENU -->
+        <nav class="menu collapse" id="abc">
+          <div id="row" class="row py-2">
+              <div class="col-md-2"><h5>Home</h5></div>
+              <div class="col-md-2"><h5>Order</h5></div>
+              <div class="col-md-2"><h5>Product</h5></div>
+              <div class="col-md-2"><h5>Services</h5></div>
+              <div class="col-md-2"><h5>Contact</h5></div>
+              <div class="col-md-2"><h5>Shippment</h5></div>
+          </div>
+        </nav>
+        <!-- EOF MENU -->
+
+        <div class="card-body p-0 m-0" id="cardbody">
+          <div class="row m-0 p-0" id="row1">
+            <div class="col-4 p-0 carousel slide" id="content" data-ride="carousel">
+              <ul style="list-style: none;">
+                <li data-target="#content" data-slide-to="0" class="active">        
+                </li>
+                <li data-target="#content" data-slide-to="1">        
+                </li>
+                <li data-target="#content" data-slide-to="2">        
+                </li>
+                <li data-target="#content" data-slide-to="3">        
+                </li>
+              </ul>
+               <div class="carousel-inner p-0">
+                <div class="carousel-item active">  
+                  <h1>50% OFF <br> ON ALL <br> PRODUCTS<sup><b>*</b></sup></h1>
+                </div>
+                <div class="carousel-item">  
+                  <h1>FAST & <br>FREE <br>DELIVERY<sup><b>*</b></sup></h1>
+                </div>
+                <div class="carousel-item">  
+                  <h1>100% SECURE PAYMENT<sup><b>*</b></sup></h1>
+                </div>
+                <div class="carousel-item">  
+                  <h1>EMI OPTIONS AVAILABLE<sup><b>*</b></sup></h1>
+                </div>
+               </div>
+            </div>
+            <!-- EOF COL4 -->
+            <div class="col-8 p-0 carousel slide" data-ride="carousel" id="demo">
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+              </ul>
+              <div class="carousel-inner p-0">
+                <div class="carousel-item active">  
+                   <img src="all_images/anete-lusina--4Wi_ii6StY-unsplash.jpg" width="100%" height="95%">
+                </div>
+                <div class="carousel-item">  
+                  <img src="all_images/annie-spratt-hrqMHFKC6g8-unsplash.jpg" width="100%" height="95%">
+                </div>
+                <div class="carousel-item">  
+                   <img src="all_images/bruce-mars-DBGwy7s3QY0-unsplash.jpg" width="100%" height="95%">   
+                </div>
+                <div class="carousel-item">  
+                  <img src="all_images/stefan-stefancik-Ue2-23uBwNw-unsplash.jpg" width="100%" height="95%">   
+                </div>
+              </div>  
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+          </div>
+            <!--EOF COL8 -->
+        </div>
+        <!-- EOF ROW -->
+      </div>
+      <!-- EOF of CARDBODY -->
+    </section>
+    <!-- EOF SECTION1 -->
+
+    <!-- CATEGORY SECTION -->
+    <section class="category carousel slide" data-ride="carousel" >
+      <div class="row" id="row1">
+        <div class="col-1">  
+        </div>
+        <div class="col-xl-4">
+          <h2 class="py-3 text-center">PRODUCT CATEGORIES</h2>
+        </div>
+      </div>
+      <div class="contents carousel-inner">
+      <div class="row m-0 p-0 carousel-item active" id="row2">
+        <div class="col-md-12 p-0">
+          <div class="row m-0 p-0" id="row2">
+            <div class="col-3 py-4 column" id="col1">
+              <i class="fas fa-mobile-alt"></i>
+              <h5>Mobile</h5>
+            </div>
+            <div class="col-3 py-4 column" id="col2">
+              <i class="fas fa-laptop"></i> 
+              <h5>Laptop</h5>
+            </div>
+            <div class="col-3 py-4 column" id="col3">
+              <i class="fas fa-camera"></i>
+              <h5>Camera</h5>
+            </div>
+            <div class="col-3 column py-4" id="col4">
+              <i class="fas fa-tv"></i> 
+              <h5>TV</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row m-0 p-0 carousel-item" id="row2">
+        <div class="col-md-12 p-0">
+          <div class="row m-0 p-0" id="row2">
+            <div class="col-3 column" id="col1">
+              <i class="fas fa-headphones"></i>
+              <h6>Headphone</h6>
+            </div>
+            <div class="col-3 column" id="col2">
+              <img src="all_images/kisspng-refrigerator-washing-machines-freezers-clothes-dry-free-fridge-icon-image-5ab0ab66195a27.1747360715215276541039.png" style="padding: 10px 0px;" width="80">
+              <h5>Fridge</h5>
+            </div>
+            <div class="col-3 column" id="col3">
+              <img src="all_images/kisspng-air-conditioning-computer-icons-symbol-hvac-air-condition-icon-symbol-5ab0ef6ade90c8.1713824415215450669116.png" width="80">
+              <h5>AC</h5>
+            </div>
+            <div class="col-3 column" id="col4">
+              <img src="all_images/kisspng-computer-icons-personal-computer-computer-monitors-computer-desktop-pc-5abe47625bb1e1.3284876415224195543756.png" width="80"> 
+              <h5>PC</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+    <!-- eof CATEGORY SECTION -->
+
+    <!-- SECTION2 CONTENTS -->
+    <section class="section2">
+      <!-- HEADING ROW1 -->
+      <div class="row" id="row1">
+         <div class="col-1">  
+         </div>
+         <div class="col-xl-4">
+           <h2 class="pt-4 text-center">TRENDING PRODUCTS</h2>
+         </div>
+      </div>
+      <hr style="background-color: black; margin: 0 auto; width: 80%;">
+      <hr style="background-color: black; margin: 0 auto; width: 80%;">
+      <hr style="background-color: black; margin: 0 auto; width: 80%;">
+      <!-- EOF HEADING ROW1-->
+      <!-- ROW2 -->
+      <div class="row m-0 p-0" id="row2">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-md-10 BOX">
+          <div class="box box1 col">
+            <img src="all_images/Laptops/dell inspiron 5406/51YwG-FYB5L._SL1000_.jpg" width="100%">
+            <h5>Dell Inspiron 5406</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">69,900</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" id="wishlist">
+                <button class="btn btn-block btn-outline-danger" id="wishlist" data-toggle="modal" data-target="#wish"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></button>
+                <!-- MODAL -->
+                <div class="modal fade" id="wish">
+                  <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: rgb(243, 243, 243);">
+                      <div class="modal-header">Dell Inspiron 5406</div>
+                      <div class="modal-body">
+                        <h5>Item Added to Your Wishlist!!</h5>
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok
+                      </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- EOF MODAL -->
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <button type="button" class="btn btn-block btn-outline-secondary" data-toggle="modal" data-target="#model"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></button>
+                <div class="modal fade" id="model">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content" style="background-color: rgb(235, 235, 235);">
+                      <div class="modal-header">
+                        <div class="modal-title">Dell Inspiron 5406</div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body carousel" data-ride="carousel" id="list">
+                        <ul style="list-style: none;">
+                          <li data-target="#list" data-slide-to="0" class="active"></li>
+                          <li data-target="#list" data-slide-to="1"></li>
+                          <li data-target="#list" data-slide-to="2"></li>
+                          <li data-target="#list" data-slide-to="3"></li>
+                        </ul>
+                        <div class="row m-0">
+                          <div class="col-2 p-0"></div>
+                          <div class="col-sm-8 carousel-inner">
+                            <img src="all_images/Laptops/dell inspiron 5406/51YwG-FYB5L._SL1000_.jpg" width="100%" class="carousel-item active">
+                            <img src="all_images/Laptops/dell inspiron 5406/51-f-wOnjOL._SL1080_2.jpg" width="100%" class="carousel-item">
+                            <img src="all_images/Laptops/dell inspiron 5406/61Wc6DnWCYL._SL1080_1.jpg" width="100%" class="carousel-item">
+                            <img src="all_images/Laptops/dell inspiron 5406/51413gY9eEL._SL1080_3.jpg" width="100%" class="carousel-item">
+                            <a class="carousel-control-prev" href="#list" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#list" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          </div>
+                          <div class="col-2 p-0"></div>  
+                        </div>
+                        <h4>Dell Inspiron 5406</h4>
+                        <h6>Dell Inspiron 5406 Laptop 11th Gen Core i7/ 8GB/ 512GB SSD/ Win10/ 2GB Graph</h6>
+                        <h5><img src="all_images/rupee.png" width="4%" style="margin-bottom: 2px;">69,900</h5>
+                      </div>
+                      <div class="modal-footer py-1">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <button class="btn btn-block btn-outline-success" id="cart" data-toggle="modal" data-target="#add">Cart <i class="fas fa-cart-plus"></i></button>
+                <div class="modal fade" id="add">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="modal-title">Dell Inspiron 5406</div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Item Added to You Cart!!</h5>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box2 col">
+            <img src="all_images/Laptops/Apple Macbook Air/71vFKBpKakL._SL1500_.jpg" width="100%">
+            <h5>Apple MacBook Air</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">46,999</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" >
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box3 col">
+            <img src="all_images/Laptops/asus ROG Strix G17/81Vr3jzftaL._SL1500_.jpg" width="100%">
+            <h5>ASUS ROG Strix G17</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">32,750</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box4 col">
+            <img src="all_images/Laptops/Lenovo Ideapad slim 3/61Dw5Z8LzJL._SL1000_.jpg" width="100%">
+            <h5>Lenovo IdeaPad Slim3</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">34,990</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" id="wishlist">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-1 p-0">
+
+        </div>
+
+      </div>
+      <!-- EOF ROW2 -->
+      <!-- ROW3 -->
+      <div class="row m-0 p-0 Mobile" id="row2">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-md-10 BOX">
+          <div class="box box1 col">
+            <img src="all_images/Mobiles/OnePlus 9/61MJilnI5pL._SL1500_.jpg" width="100%">
+            <h5>OnePlus 9 5G</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">69,900</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" id="wishlist">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box2 col">
+            <img src="all_images/Mobiles/Huewai Mate 40 Pro/41EOfjyM1iL._AC_SR400,400_.jpg" width="100%">
+            <h5>Huewai Mate 40 Pro</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">46,999</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" >
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box3 col">
+            <img src="all_images/Mobiles/Samsung A52/81-nNnxa6VS._SL1500_.jpg" width="100%">
+            <h5>Samsung Galaxy A52</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">32,750</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box4 col">
+            <img src="all_images/Mobiles/Apple iphone 13 Pro/61jLiCovxVL._SL1500_.jpg" width="100%">
+            <h5>Apple iPhone 13 Pro</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">34,990</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" id="wishlist">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-1 p-0">
+
+        </div>
+
+      </div>
+      <!-- EOF ROW3 -->
+
+    <!-- ROW4 -->
+    <div class="row m-0">
+      <div class="col-5 p-0">
+
+      </div>
+      <div class="col-3 p-0">
+        <a href="#" class="btn btn-warning btn-block text-white my-3 py-2 w-75 " id="more">View More</a>
+      </div>
+      <div class="col-sm-5 p-0">
+
+      </div>
+    </div>
+    </section>
+    <!-- EOF SECTION2 -->
+
+    <!-- SECTION3  -->
+    <section class="section2">
+      <!-- HEADING ROW1 -->
+      <div class="row" id="row1">
+         <div class="col-1">  
+         </div>
+         <div class="col-xl-4">
+           <h2 class="pt-3 text-center">TOP PRODUCTS</h2>
+         </div>
+      </div>
+      <hr style="background-color: black; margin: 0 auto; width: 80%;">
+      <hr style="background-color: black; margin: 0 auto; width: 80%;">
+      <hr class="mb-4" style="background-color: black; margin: 0 auto; width: 80%;">
+      <!-- EOF HEADING ROW1-->
+      <!-- ROW2 -->
+      <div class="row m-0 p-0" id="row2">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-md-10 BOX">
+          <div class="box box1 col">
+            <img src="all_images/Mobiles/Apple iphone 13 mini/61cpernSJuL._SL1500_.jpg" width="100%">
+            <h5>Apple iPhone13 Mini</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">69,900</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" id="wishlist">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box2 col">
+            <img src="all_images/Mobiles/Huewai p40 Pro/H5cc37f5d481742478d5379b9c499f4b2d.jpg" width="100%">
+            <h5>Huewai P40 Pro 5G</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">46,999</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" >
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box3 col">
+            <img src="all_images/Mobiles/Samsung A52/81-nNnxa6VS._SL1500_.jpg" width="100%">
+            <h5>Samsung Galaxy A52</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">32,750</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box4 col">
+            <img src="all_images/Mobiles/Huewai Mate 40 Pro/41EOfjyM1iL._AC_SR400,400_.jpg" width="100%">
+            <h5>Huewai Mate 40 Pro </h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">34,990</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" id="wishlist">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-1 p-0">
+
+        </div>
+
+      </div>
+      <!-- EOF ROW2 -->
+      <!-- ROW3 -->
+      <div class="row m-0 p-0 Laptop" id="row2">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-md-10 BOX">
+          <div class="box box1 col">
+            <img src="all_images/Laptops/dell inspiron 5406/51YwG-FYB5L._SL1000_.jpg" width="100%">
+            <h5>Dell Inspiron 5406</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">69,900</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" id="wishlist">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box2 col">
+            <img src="all_images/Laptops/Apple Macbook Air/71vFKBpKakL._SL1500_.jpg" width="100%">
+            <h5>Apple MacBook Air</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">46,999</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" >
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box3 col">
+            <img src="all_images/Laptops/asus ROG Strix G17/81Vr3jzftaL._SL1500_.jpg" width="100%">
+            <h5>ASUS ROG Strix G17</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">32,750</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box box4 col">
+            <img src="all_images/Laptops/Lenovo Ideapad slim 3/61Dw5Z8LzJL._SL1000_.jpg" width="100%">
+            <h5>Lenovo IdeaPad Slim3</h5>
+            <h5><img src="all_images/rupee.png" width="5%" style="margin-bottom: 2px;">34,990</h5>
+            <div class="row m-0">
+              <div class="col-xl-4 p-0 d-flex"> 
+              <div class="col-6 p-0" id="wishlist">
+                <a href="#" class="btn btn-block btn-outline-danger" id="wishlist"><i class="fas fa-heart fa-xl" style="position: relative; right: 4.5px;"></i></a>
+              </div>
+              <div class="col-6 p-0 ml-1 mb-1">
+                <a href="#" class="btn btn-block btn-outline-secondary"><i class="far fa-eye fa-lg" style="position: relative; right: 4.5px;" id="view"></i></a>
+              </div>
+              </div>
+              <div class="col-xl-7 p-0 ml-2" id="cart">
+                <a href="#" class="btn btn-block btn-outline-success" id="cart">Cart <i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-1 p-0">
+
+        </div>
+
+      </div>
+      <!-- EOF ROW3 -->
+
+    <!-- ROW4 -->
+    <div class="row m-0">
+      <div class="col-5 p-0">
+
+      </div>
+      <div class="col-3 p-0" id="more">
+        <a href="#" class="btn btn-warning btn-block text-white my-3 py-2 w-75">View More</a>
+      </div>
+      <div class="col-sm-5 p-0">
+
+      </div>
+    </div>
+    </section>
+    <!-- EOF SECTION3  -->
+
+    <!-- SECTION4 CONTENTS -->
+     <section class="section4 carousel slide" data-ride="carousel">
+      <div class="row" id="row1">
+        <div class="col-1">  
+        </div>
+        <div class="col-xl-4">
+          <h2 class="py-3 text-center">TOP BRANDS</h2>
+        </div>
+     </div>
+     <div class="row carousel-inner m-0" id="brands">
+       <div class="col-12 carousel-item active p-0">
+       <div class="row m-0 p-0" id="row2">
+         <div class="col-3 py-2 column" id="col1">
+            <img src="all_images/Logos/kisspng-dell-sonicwall-logo-dell-logo-5b2222efd89601.9953765715289638238872.png" width="100">
+         </div>
+         <div class="col-3 column" id="col2">
+            <img src="all_images/Logos/kisspng-logo-samsung-electronics-business-television-samsung-5ab70c599317d2.2741782815219456896025.png" width="100"> 
+         </div>
+         <div class="col-3 py-2 column" id="col3">
+             <img src="all_images/Logos/kisspng-macintosh-mac-os-x-lion-macos-macbook-operating-sy-apple-logo-5a77a762377353.6074034315177910742271.png" width="100">
+         </div> 
+         <div class="col-3 column" id="col4">
+             <img src="all_images/Logos/kisspng-canon-eos-750d-logo-symbol-mini-5ab53ae012fa25.8188278515218265280777.png" width="100">
+         </div>
+        </div> 
+       </div>
+       <div class="col-12 carousel-item p-0">
+       <div class="row m-0 p-0" id="row2">
+        <div class="col-3 py-3 column" id="col1">
+           <img src="all_images/Logos/kisspng-hewlett-packard-hp-pavilion-5ad9de2275e878.974450381524227618483.png" width="100">
+        </div>
+        <div class="col-3 py-2 column" id="col2">
+           <img src="all_images/Logos/kisspng-nikon-d500-camera-nikon-1-series-photography-nikon-logo-5b0ddab4070020.5471635615276346120287.png" width="100"> 
+        </div>
+        <div class="col-3 py-2 column" id="col3">
+            <img src="all_images/Logos/kisspng-oneplus-5t-customer-service-oneplus-3t-5b1208ee4e0f67.9867607915279085903198.png" width="100">
+        </div>
+        <div class="col-3 column py-2" id="col4">
+            <img src="all_images/Logos/kisspng-sony-logo-fujifilm-company-lenovo-logo-5ad6ab41685103.6404286015240179854273.png" width="100">
+        </div>
+      </div>
+      </div>
+    </div>  
+     </section>
+    <!-- EOF SECTION4 -->
+
+    <!-- SECTION5 -->
+    <section class="section5 my-4">
+      <div class="row m-0 p-0" id="row2">
+        <div class="col-6 p-0">
+          <div class="row main-column m-0">
+            <div class="col-sm-6 py-2 column" id="col1">
+              <div>
+                <i class="fas fa-rocket text-danger"></i>
+              </div>
+              <div> 
+                <h5 class="my-0">FAST & FREE DELIVERY</h5>
+                <p style="line-height: 18px;">Free delivery for all orders over 5000
+                </p>
+              </div> 
+            </div>
+            <div class="col-sm-6 py-2 column" id="col2">
+              <div>
+                <i class="fas fa-sync-alt text-success"></i>
+              </div>
+              <div> 
+                <h5 class="my-0">MONEY BACK GAURENTEE</h5>
+                <p style="line-height: 18px;">We return money within 30 days</p>
+              </div>  
+            </div>
+        </div>
+        </div>
+        <div class="col-6 p-0">
+          <div class="row main-column m-0">
+            <div class="col-sm-6 py-2 column" id="col3">
+              <div>
+                <i class="fas fa-headset text-secondary"></i>
+              </div>
+              <div>  
+                <h5 class="my-0">24/7 CUSTOMER SUPPORT</h5>
+                <p style="line-height: 18px;">Friendly 24/7 customer support</p>
+              </div>   
+            </div>
+            <div class="col-sm-6 column py-2" id="col4">
+              <div>
+                <i class="fas fa-credit-card text-dark"></i>
+              </div>
+              <div>  
+                <h5 class="my-0">SECURE ONLINE PAYMENT</h5>
+                <p style="line-height: 18px;">We possess Secure certificate</p>
+              </div>   
+            </div>
+          </div>
+        </div>    
+      </div>
+    </section>
+    <!-- EOF SECTION5 -->
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark pt-3">
+      <div class="row m-0">
+        <div class="col-sm-6">
+          <div class="row m-0 p-0">
+            <div class="col-6 p-0">
+               <h5 class="text-white">Shop departments</h5>
+               <ul>
+                 <li>Mobile</li>
+                 <li>Laptop</li>
+                 <li>TV</li>
+                 <li>Headphone</li>
+                 <li>AC</li>
+                 <li>Camera</li>
+               </ul>
+            </div>
+            <div class="col-6 p-0">
+               <h5 class="text-white">About us</h5>
+               <ul>
+                 <li>About company</li>
+                 <li>Our team</li>
+                 <li>News</li>
+               </ul> 
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row m-0 p-0">
+            <div class="col-6 p-0">
+              <h5 class="text-white">Contact us</h5>
+              <ul>
+                <li><i class="fas fa-phone"></i> +91 8539743983</li>
+                <li><i class="fas fa-phone"></i> +91 4867984575</li>
+                <li><i class="fas fa-envelope"></i> digitalshopiee@gmail.com</li>
+              </ul>
+
+            </div>
+            <div class="col-6 p-0">
+              <h5 class="text-white">Stay informed</h5>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Your Email">
+                <div class="input-group-append border-0">
+                  <span class="input-group-text bg-danger text-white border-0">Subscribe</span>
+                </div>
+              </div>
+              <!-- <i class="fab fa-twitter fa-2x" style="color: #00acee; float: right;"></i> -->
+              <div style="display: flex; justify-content: center
+              ;">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_yly38x6y.json"  background="transparent"  speed="1"  style="width: 70px; height: 70px;"  loop  autoplay></lottie-player>
+              <!-- <i class="fab fa-youtube fa-2x mr-1" style="color: #f73434; float: right;"></i> -->
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_puu4hfmk.json"  background="transparent"  speed="1"  style="width: 70px; height: 70px;"  loop  autoplay></lottie-player>
+              <!-- <i class="fab fa-facebook fa-2x mr-1" style="color: #4b7df0; float: right;"></i> -->
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_cwyafad8.json"  background="transparent"  speed="1"  style="width: 70px; height: 70px;"  loop  autoplay></lottie-player>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="background-color: rgb(124, 123, 123);width: 90%; margin: 0% auto;">
+      <div class="row m-0 bg-dark">
+        <div class="col-4"></div>
+        <div class="col-md-4 my-2 d-flex justify-content-center text-white">
+          <i class="far fa-copyright"></i><p><b> digitalshopiee.2021</b></p>
+        </div>
+        <div class="col-4"></div>
+      </div>
+    </footer>
+    <!-- EOF FOOTER -->
+</body>
+</html>

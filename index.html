@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(to bottom right,#95afc0,#c7ecee,#7ed6df,#22a6b3);
+            /* background-image: linear-gradient(to bottom right,#dff9fb,#c7ecee,#95afc0,#535c68); */
+            /* background-image:linear-gradient(to bottom right,#4affde 0%,#5b9dff 40%,#d06bff 60%,#ff34d2 100%); */
+            /* background-image: url(../layout/pexels-skitterphoto-705164.jpg); */
+            /* background-size: 100% 110%; */
+            background-size: 200% 200%;
+            animation-name: animate;
+            animation-timing-function:linear;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        @keyframes animate {
+            from{
+               background-position: 0% 0%;
+            }
+            to{
+               background-position: 100% 100%;
+            }
+            
+        }
+        body #Card{
+            width: 350px;
+            height: 450px;
+            position: absolute;
+            right: 100px;
+            box-shadow: 2px 2px 20px darkslategray;
+            /* background-color: rgba(22, 31, 31,0.1);
+             */
+             background-color: transparent;
+            /* color: white; */
+        }
+        @media screen and (max-width:500px) {
+            #Card{
+                position: sticky;
+                left:10px;
+            }
+            
+        }
+        @media screen and (max-width:370px) {
+            #Card{
+                position: sticky;
+                left:3px;
+                right:1px;
+            }
+            
+        }
+
+        #username{
+            background: transparent;
+            color: white;
+            border: none;
+            border-bottom: 1px solid white;
+        }
+        #password{
+            background: transparent;
+            color: white;
+            border: none;
+            border-bottom: 1px solid white;
+        }
+        #icon{
+            position: absolute;
+            left: 20%;
+            font-size: 150px;
+
+        }
+        @media screen and (max-width:3000px){
+            #admin{
+                opacity: 0;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            #icon{
+                visibility: hidden;
+            }
+            #admin{
+                opacity: 1;
+            }
+
+            
+        }
+        #username:focus{
+            transition: all .2s ease;
+            transform: scale(1.05);
+            background-color:black;
+        }
+        #password:focus{
+            transition: all .2s ease;
+            transform: scale(1.05);
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <i class="fas fa-users-cog" id="icon"></i> -->
+    <div id="icon">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_eyiSYH.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    </div>
+    <div id="Card" class="card d-flex flex-column justify-content-center">
+        <div class="row m-0">
+            
+            <div class="col-12">
+                <!-- <i class="fas fa-users-cog float-right" style="font-size: 30px;" id="admin"></i> -->
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player id="admin" class="float-right" src="https://assets9.lottiefiles.com/packages/lf20_jG1vRV.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
+                <h3 class="pb-3">Customer Login </h3>
+                <div class="form-group">
+                   <label><b>Email</b></label>
+                   <input type="text" class="form-control" placeholder="Enter Email Address" id="username">
+                </div>
+                <div class="form-group">
+                   <label><strong>Password</strong></label>
+                   <input type="password" maxlength="10" class="form-control" placeholder="Enter Password" id="password">
+                </div>
+                <div class="form-group">
+                <input type="checkbox">
+                <label><strong>Remember Me!</strong></label>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                      <a href="home.html" class="btn btn-success btn-block">Log in</a>
+                    </div>
+                    <div class="col-6">
+                       <a href="#" class="btn btn-outline-dark btn-block">Clear</a>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

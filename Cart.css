@@ -1,0 +1,219 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  body{
+      margin: 0%;
+      padding: 0%;
+      overflow-x: hidden;
+      background-color: rgb(48, 48, 48);
+  }
+  /* SECTION1 */
+  body .section1{
+      width: 100vw;
+      height: 100%;
+  }
+  body .section1 #card{
+    margin: 0;
+    padding: 0;
+  }
+  /* CARD HEADER */
+  body .section1 .header{
+      width: 100%;
+      padding: 5px 0px 10px 0px;
+      margin:0px;
+  }
+  body .section1 .header #row{
+      width: 100%;
+      margin: 0%;
+  }
+  body .section1 .header #row #col1{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0%;
+  }
+  body .section1 .header #row #col1 h3{
+    padding-right: 55px;
+  }
+  
+ 
+   body .section1 .header #row #col2{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  } 
+
+  body .section1 .header #row #col3{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      cursor: pointer;
+      padding: 0%;
+  }
+  @media  screen and (max-width:1250px) {
+    body .section1 .header #row #col3 h5{
+        display: none;
+    }    
+  }
+  @media  screen and (max-width:770px){
+    body .section1 .header #row #col3{
+      position: relative;
+      left: 150px;
+      
+    }
+  }
+  @media  screen and (max-width:770px){
+    body .section1 .header #row #col3 i{
+      padding-left: 20px;
+
+    }
+  }
+  @media  screen and (max-width:390px){
+    body .section1 .header #row #col3 {
+      position: relative;
+      left: 130px;
+
+    }
+  }
+  
+
+ /* NAV MENU */
+  body .section1 .menu{
+      width: 100%;
+      background-color: lightgray;
+      /* background-color: rgb(207, 207, 207); */
+  }
+  body .section1 .menu #row{
+      width: 70%;
+      margin: 0% auto;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+  }
+/* eof nav */
+
+/* CARD BODY */
+.section1 #cardbody{
+  width: 100%;
+  height:100%;
+}
+
+.section1 #cardbody #row1 #col1 ul{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.section1 #cardbody #row1 #col1 li{
+  list-style: none;
+  padding: 0% 10px;
+  
+}
+@media screen and (max-width:600px) {
+  #row1{
+    margin-bottom: 0px;
+  }
+  
+}
+.section1 #cardbody #row3 #row31 #col2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section1 #cardbody #remove{
+  /* transform: translateX(-150px); */
+  transform: translateX(-170%);
+}
+
+@media screen and (max-width:1330px) {
+  .section1 #cardbody #remove{
+    transform: translateX(-120%);
+  }
+  
+}
+
+@media screen and (max-width:1150px) {
+  .section1 #cardbody #remove{
+    transform: translateX(-100%);
+  }
+  
+}
+@media screen and (max-width:1100px) {
+  .section1 #cardbody #remove{
+    transform: translateX(-90%);
+  }
+  
+}
+@media screen and (max-width:600px) {
+  .section1 #cardbody #remove{
+    transform: translateX(-50%);
+  }
+  
+}
+@media screen and (max-width:530px) {
+  .section1 #cardbody #remove{
+    transform: translateX(-10%);
+  }
+  
+}
+
+@media screen and (max-width:1000px) {
+  .section1 #cardbody #Subtotal{
+    width: 75%;
+  }
+  
+}
+
+
+/* EOF CARDBODY */
+ 
+/* EOF SECTION1 */
+
+/* SECTION2 CONTENTS */
+.section5 i{
+  font-size: 36px;
+}
+.section5 .column{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: white;
+}
+@media screen and (max-width:1260px) {
+  .section5 .column{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+@media screen and (max-width:500px) {
+  .section5 .main-column{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+/* EOF SECTION2 */
+
+
+/* FOOTER CONTENTS */
+.footer{
+  border-top: 5px solid rgb(44, 40, 40);
+  border-bottom: 5px solid rgb(44, 40, 40);
+  border-left:2px solid rgb(44, 40, 40);
+  border-right:2px solid rgb(44, 40, 40);
+  color: rgb(214, 216, 216);
+}
+.footer li{
+list-style: none;
+font-weight: 500;
+cursor: pointer;
+}
+.footer li:hover{
+/* color:rgb(185, 185, 185); */
+color: white;
+}
+/* EOF FOOTER */
